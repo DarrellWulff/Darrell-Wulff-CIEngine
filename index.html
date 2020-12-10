@@ -1,0 +1,102 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="=style.css" type="text/css">
+	</head>
+	<body class="gameBody" onload="InitMain();">
+		<canvas id="the_canvas">
+			Get a current browser!
+		</canvas>
+	</body>
+
+	<!--TEXTURES-->
+	<image src="ProjectJumbleGame/textures/earth-texture.jpg" id="earth-texture" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/interstellar_skybox/xpos.png" id="skybox-right" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/interstellar_skybox/xneg.png" id="skybox-left" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/interstellar_skybox/ypos.png" id="skybox-top" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/interstellar_skybox/yneg.png" id="skybox-bottom" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/interstellar_skybox/zpos.png" id="skybox-back" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/interstellar_skybox/zneg.png" id="skybox-front" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/BasicBlueSky/BasicBlueSky.png" id="basicsky" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/BasicCloudSky/BSIMGB.png" id="bs-bottom" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/BasicCloudSky/BSIMGFR.png" id="bs-front" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/BasicCloudSky/BSIMGM.png" id="bs-back" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/BasicCloudSky/BSIMGR.png" id="bs-right" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/BasicCloudSky/BSIMGT.png" id="bs-top" width="0" height="0"></image>
+	<image src="ProjectJumbleGame/textures/BasicCloudSky/BSIMG1L.png" id="bs-left" width="0" height="0"></image>
+
+	<!--CORE-->
+	<script src="CIEngine/core/CIEngine.js"></script>
+	<script src="CIEngine/core/Renderer.js"></script>
+	<script src="CIEngine/core/PhysicsEngine.js"></script>
+
+	<!--ENTITY-->
+	<script src="CIEngine/entity/entity.js"></script>
+
+	<!--COMPONENTs-->
+	<script src="CIEngine/component/component.js"></script>
+	<script src="CIEngine/component/inputComponent.js"></script>
+	<script src="CIEngine/component/movementComponent.js"></script>
+	<script src="CIEngine/component/physicsComponent.js"></script>
+
+	<!--GAME-->
+	<script src="CIEngine/game/game.js"></script>
+	<script src="CIEngine/scene/scene.js"></script>
+
+	<!--PHYSICS-->
+	<script src="CIEngine/physics/AABB.js"></script>
+	<script src="CIEngine/physics/collider.js"></script>
+	<script src="CIEngine/physics/boundingSphere.js"></script>
+	<script src="CIEngine/physics/intersectData.js"></script>
+	<script src="CIEngine/physics/physicsObject.js"></script>
+	<script src="CIEngine/physics/plane.js"></script>
+
+	<!--MATH/TRANSFORM-->
+	<script src="CIEngine/transform/vector.js"></script>
+	<script src="CIEngine/transform/quaternion.js"></script>
+	<script src="CIEngine/transform/matrix.js"></script>
+	<script src="CIEngine/transform/transform.js"></script>
+
+	<!--MESH-->
+	<script src="CIEngine/mesh/mesh.js"></script>
+	<script src="CIEngine/mesh/rgbmesh.js"></script>
+	<script src="CIEngine/mesh/uvmesh.js"></script>
+	<script src="CIEngine/mesh/shapes.js"></script>
+	<script src="CIEngine/mesh/rgbglassMesh.js"></script>
+
+	<!--LIGHTS-->
+	<script src="CIEngine/light/lightManager.js"></script>
+	<script src="CIEngine/light/directionalLight.js"></script>
+	<script src="CIEngine/light/pointLight.js"></script>
+
+	<!--MATERIALS-->
+	<script src="CIEngine/materials/coloredMaterial.js"></script>
+	<script src="CIEngine/materials/texturedMaterial.js"></script>
+	<script src="CIEngine/materials/coloredRefractiveMaterial.js"></script>
+	<script src="CIEngine/materials/texturedRefractiveMaterial.js"></script>
+
+	<!--SKYBOX MATERIALS-->
+	<script src="CIEngine/materials/skybox.js"></script>
+
+	<!--CAMERA-->
+	<script src="CIEngine/cameras/perspectiveCamera.js"></script>
+	<script src="CIEngine/cameras/fpsCamera.js"></script>
+
+	<!--UTILS-->
+	<script src="CIEngine/utils/shaderUtils.js"></script>
+	<script src="CIEngine/utils/importUtils.js"></script>
+	<script src="CIEngine/utils/objParse.js"></script>
+
+	<!--SCENES-->
+	<script src="ProjectJumbleGame/scenes/demo.js"></script>
+	<script src="ProjectJumbleGame/scenes/simpleDemo.js"></script>
+	<script src="ProjectJumbleGame/scenes/TestScene.js"></script>
+
+	<!--PROJECTJUMBLEGAME-->
+	<script src="ProjectJumbleGame/project/PJGame.js"></script>
+	<script src="ProjectJumbleGame/scripts/playerEntity.js"></script>
+	<script src="ProjectJumbleGame/scripts/wallEntity.js"></script>
+
+	<!--MAIN-->
+	<script src="main/main.js"></script>
+
+</html>
